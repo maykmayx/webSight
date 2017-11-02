@@ -1,4 +1,4 @@
-from flask import Flask, request, redirect, url_for, flash, send_from_directory
+from flask import Flask, request, redirect, url_for, flash, send_from_directory, render_template
 from werkzeug.utils import secure_filename
 import os
 from datetime import datetime
@@ -17,16 +17,8 @@ def allowed_file(filename):
 def homepage():
     the_time = "Hello world"
     print(request)
-    return """
-    <h1>האתר המגניב של רון ועומר</h1>
-    <p>עוד מעט יהיה אפשר להעלות תמונות, בינתיים.. הינה חתול</p>
-    <form method=post enctype=multipart/form-data>
-      <p><input type=file name=file>
-        <input type=text name=pass>        
-         <input type=submit value=Upload>
-    </form>
-    
-    """.format(time=the_time)
+    return render_template("index.html")
+
 # <img src="http://loremflickr.com/600/400">
 @app.route('/', methods=['POST'])
 def handlePost():
@@ -55,6 +47,10 @@ def handlePost():
 def send_tempFiles(path):
     return send_from_directory('tempFiles', path)
 
+
+@app.route('/public/<path:path>')
+def sendPublic(path):
+    return send_from_directory('public', path)
 
 if __name__ == '__main__':
     app.run(debug=True, use_reloader=True)
