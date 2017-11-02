@@ -7,8 +7,8 @@ def homepage():
     the_time = "Hello world"
 
     return """
-    <h1>Hello heroku</h1>
-    <p>It is currently Hello world.</p>
+    <h1>האתר המגניב של רון ועומר</h1>
+    <p>עוד מעט יהיה אפשר להעלות תמונות, בינתיים.. הינה חתול</p>
 
     <img src="http://loremflickr.com/600/400">
     """.format(time=the_time)
