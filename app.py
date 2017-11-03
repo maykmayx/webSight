@@ -16,13 +16,20 @@ def allowed_file(filename):
 
 @app.route('/', methods=['GET'])
 def homepage():
-    the_time = "Hello world"
-    print(request)
+    """
+    Dumbest rendering ever... we can add some things here
+    but its not mendatory.
+    """
     return render_template("index.html")
 
-# <img src="http://loremflickr.com/600/400">
+
 @app.route('/', methods=['POST'])
 def handlePost():
+    """
+    this function is handle to get the picture from the HTML Form
+    it can handle pictures and saving them under "/tempFiles"
+    :return:
+    """
     # check if the post request has the file part
     if(request.form['pass'].lower() != "omer"):
         return redirect(request.url)
