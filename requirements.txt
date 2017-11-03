@@ -1,5 +1,5 @@
 Flask
 gunicorn
 scipy
-nunpy
+numpy
 tensorflow
