@@ -38,7 +38,7 @@ def handlePost():
         return redirect(request.url)
     file = request.files['file']
     # if user does not select file, browser also
-    # submit a empty part without filename
+    # submit a empty part without filename some info
     if file.filename == '':
         flash('No selected file')
         return redirect(request.url)
