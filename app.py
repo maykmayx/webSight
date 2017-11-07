@@ -1,6 +1,5 @@
 from flask import Flask, request, redirect, url_for, flash, send_from_directory, render_template
 from werkzeug.utils import secure_filename
-from imTransformer import process
 import os
 from datetime import datetime
 
@@ -47,7 +46,6 @@ def handlePost():
         currTime = datetime.utcnow().strftime('%Y%m%d%H%M%S%f')[:-3]
         link = os.path.join(app.config['UPLOAD_FOLDER'], "%s.%s"%(currTime, extension))
         file.save(link)
-        process(link)
         return """
         <img src="%s">
         """%(link)
