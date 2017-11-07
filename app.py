@@ -62,4 +62,4 @@ def sendPublic(path):
     return send_from_directory('public', path)
 
 if __name__ == '__main__':
-    app.run(debug=True, use_reloader=True)
+    app.run(host='0.0.0.0', port=80)
