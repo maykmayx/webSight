@@ -1,0 +1,69 @@
+These are the tasks to accomplish WebSight, splitted by contributor and organized by their expected chronological order.
+
+Ron:
+ - Connect with Omer to shared GIT workspace.
+    DOD: Both of us can pull and push a TMP_CHECK file into the shared repository.
+ - Gather large scene-tagged image database. Consider Flickr30k.
+    DOD: Get over 20k tagged images.
+ - Plan neural network architecture that will fit scene-identification.
+    Consider 'show-and-tell' network for image captioning with Inception CNN->LSTM.
+    DOD: Understand the theory of the chosen architecture and have a network-graph illustration. 
+ - Install jupyter with tensorflow, and numpy.
+    DOD: Upon my windows-laptop succesfully run ipython notebook with commands: import tensorflow as tf; tf.__version__ 
+         and get valid output (version above 4).
+ - Code alpha-classifier with simple identification categories.
+    DOD: No errors when interpreting the python code upon degenerate data set. Well-documented code.
+ - Train the alpha-classifier and converge.
+    DOD: stable loss of the network, less then 15%.
+ - Code the scene-identification classifier to one-hot vec with multicategories.
+    DOD: No errors when interpreting the python code upon degenerate data set. Well-documented code.
+ - Train the scene-identification classifier and converge.
+    DOD: stable loss of the network, less then 15%.
+ - Generate scene information output vec, while generalizing similar words for same categories. 
+    DOD: Ask 5 persons (with no demands on their previus knowledge) to tell what is in a set of 5 pictures
+          According to the output vector only. Success is achieved when they got at least 20 (inclusive) pictures
+          correct out of the 25.
+ - Generate scene information string out of the one-hot vec (along with output vec for the API).
+    DOD: Ask 10 persons (with no demands on their previus knowledge) to tell what is in a set of 5 pictures
+          According to the information string only. Success is achieved when they got at least 44 (inclusive) pictures 
+          correct out of the 50.
+ - Consider future features such as feeling-recognistion by face-images.
+    DOD: TBD.
+ 
+
+Omer:
+ - Establish server that supports running python with tensorflow and numpy.
+    DOD: running server accessible via the internet that runs our POC python code.
+ - Establish server that supports uploading pictures, present pictures, and present text.
+    DOD: running server accessible via the internet that runs our POC python code with input 
+         image from user in the internet.
+ - Make a mechanism that automatically git-pull the repository into the server once in a defined time.
+    DOD: Server automatically pull a TMP_CHECK file that was pushed to the repository and wasn't in the server before.
+ - Define the API's output scheme (what would it show, as from which the demands for the classifier will be deriviated).
+    DOD: a formally written API, such that random 3 developers (with no other demands on their previus knowledge) 
+          will understand its functionality correctly. Well-documented API.
+ - Make a working web-app that is integrated with the python's module, through the API.
+    DOD: Upon data set which contains at least 100 images, satisfying results with more than 85% of the
+         images. This, where satisfying is defined by user experience graded from 1 to 10, by at least
+         10 persons.
+ - Make a working website with GUI that is integrated with the python's module, through the API. Also,
+   the GUI should contain a satisfaction-grading.
+    DOD: Upon data set which contains at least 100 images, satisfying results with more than 85% of the
+         images. This, where satisfying is defined by user experience graded from 1 to 10, by at least
+         10 persons who are using the integrated satisfaction-grading in the website.
+ - Graphically enhance the website's GUI to be modern and elegant.
+    DOD: Show the website to 10 people (with no demands on their profession), ask them to grade their
+         experience in 1 to 5, and achieve at least 3.75 in the total grade.
+ - Perform security and efficiency tests to the website.
+    DOD: An automated tool should return no incidents.
+ - Prepare expanding options for the API (such as new classifiers' output support).
+    DOD: TBD.
+         
+         
+PS.
+The mission as defined by Millo:
+  Write agile-format tasks (do not do them all, but write many as possible;
+  each task should take less then a day, smaller task at possible).
+  For each task, write what is the DOD (definition of done) - according to our choice.                                   
+  (for example: 'working' (for the user!), 'after QA with documentation').                                            
+  Think from the point of view of the user, what can the developer do for them
