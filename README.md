@@ -1,3 +1,13 @@
+WebSight - computer vision & image processing project for OpenSource workshop.
+
+This projects aims to give open service for image manipulation and computer vision featuers.
+Provided by API or a web GUI, the user could:
+  - Identify objects within a given image.
+  - Resotre colors to greyscale images.
+  - More to come in future.
+
+
+License:
 # ------------ WebSight  - license -----------------------------------------------
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License. 
@@ -9,12 +19,4 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # ==============================================================================        
-
-WebSight - computer vision & image processing project for OpenSource workshop.
-
-This projects aims to give open service for image manipulation and computer vision featuers.
-Provided by API or a web GUI, the user could:
-  - Identify objects within a given image.
-  - Resotre colors to greyscale images.
-  - More to come in future.
 
