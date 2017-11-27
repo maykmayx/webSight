@@ -59,7 +59,15 @@ Omer:
  - Prepare expanding options for the API (such as new classifiers' output support).
     DOD: TBD.
          
-         
+OFIR:
+ - Design a neural network architecture for coloring black&white images
+ - Collect data (BW images and their color version) [maybe gather images and create from them the data?]
+   (about 10k-20k images, maybe training the network on specific images that contain fewer items)
+ - Train the network (test the network and check if it really works)
+ - Understand how to connect with the webSite modules (Request & Response)
+ - Check that all works
+
+
 PS.
 The mission as defined by Millo:
   Write agile-format tasks (do not do them all, but write many as possible;
