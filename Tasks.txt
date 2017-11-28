@@ -1,5 +1,5 @@
 These are the tasks to accomplish WebSight, splitted by contributor and organized by their expected chronological order.
-dummy commit
+
 Ron:
  - Connect with Omer to shared GIT workspace.
     DOD: Both of us can pull and push a TMP_CHECK file into the shared repository.
