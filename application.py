@@ -60,4 +60,4 @@ def sendPublic(path):
     return send_from_directory('public', path)
 
 if __name__ == '__main__':
-    app.run()
+    app.run(port=8080, host='0.0.0.0')
