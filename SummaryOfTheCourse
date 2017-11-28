@@ -1,0 +1,22 @@
+This text file includes a list of topics that were discussed in each lesson (short short summary).
+
+
+Lesson 1 - Intro
+- Introducing the course and open source community.
+
+Lesson 2 - Git
+- Usage of git
+
+Lesson 3 - Licenses
+- Software Licenses 
+- open-source communities assesment and license identifying
+
+Lesson 4 - Fork
+- some historical events.
+
+Lesson 5 - Interopability
+- different systems can work together by abstraction.
+
+Lesson 6 - Compatibility
+- Java as 'haluzz' by virtualization to work on many different infrastructures.
+- dont hold\use environmental variables (database name \ specific url\ passwords..).
