@@ -20,3 +20,9 @@ Lesson 5 - Interopability
 Lesson 6 - Compatibility
 - Java as 'haluzz' by virtualization to work on many different infrastructures.
 - dont hold\use environmental variables (database name \ specific url\ passwords..).
+
+Lesson 7 - Documentation
+- Types of documentation: inside-code, commits-messages (more important), 
+                          wiki (open source communications mainly use that),
+                          bugs\tasks (the most interesting, driving the development).
+                          logs (used for debugging).
